@@ -1,14 +1,21 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from '../features/landing/components/Navbar';
+import HeroSection from '../features/landing/sections/HeroSection';
+import StatsSection from '../features/landing/sections/StatsSection';
+import FeaturesSection from '../features/landing/sections/FeaturesSection';
+import HowItWorksSection from '../features/landing/sections/HowItWorksSection';
+import CTASection from '../features/landing/sections/CTASection';
+import Footer from '../features/landing/components/Footer';
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <div className="min-h-screen bg-background">
+    <Navbar />
+    <HeroSection />
+    <StatsSection />
+    <FeaturesSection />
+    <HowItWorksSection />
+    <CTASection />
+    <Footer />
+  </div>
+);
 
 export default Index;
